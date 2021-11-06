@@ -1,7 +1,10 @@
 import React from 'react';
 import { MemoryRouter, Switch, Route } from 'react-router-dom';
+import Page0 from './page0';
+import Page1 from './Page1';
+import Page2 from './Page2';
 
-import Jumbotron from 'react-bootstrap/Jumbotron';
+// import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
@@ -9,19 +12,13 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import './App.css';
 
-const Page0 = () => <span>Page0</span>;
-
-const Page1 = () => <span>Page1</span>;
-
-const Page2 = () => <span>Page2</span>;
-
 const App = () => (
   <MemoryRouter>
     <Container className="p-3">
-      <Jumbotron>
+      {/* <Jumbotron> */}
         <h1 className="header">SPA</h1>
         <h2>
-          Current Page is{' '}
+          
           <Switch>
             <Route path="/page1">
               <Page1 />
@@ -38,17 +35,17 @@ const App = () => (
           Navigate to{' '}
           <ButtonToolbar className="custom-btn-toolbar">
             <LinkContainer to="/">
-              <Button>Page0</Button>
+              <Button>page0</Button>
             </LinkContainer>
             <LinkContainer to="/page1">
-              <Button>Page1</Button>
+              <Button>page1</Button>
             </LinkContainer>
             <LinkContainer to="/page2">
-              <Button>Page2</Button>
+              <Button>page2</Button>
             </LinkContainer>
           </ButtonToolbar>
         </h2>
-      </Jumbotron>
+      {/* </Jumbotron> */}
     </Container>
   </MemoryRouter>
 );
