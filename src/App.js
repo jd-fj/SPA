@@ -9,28 +9,28 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import './App.css';
 
-const Home = () => <span>Home</span>;
+const Page0 = () => <span>Page0</span>;
 
-const About = () => <span>About</span>;
+const Page1 = () => <span>Page1</span>;
 
-const Users = () => <span>Users</span>;
+const Page2 = () => <span>Page2</span>;
 
 const App = () => (
   <MemoryRouter>
     <Container className="p-3">
       <Jumbotron>
-        <h1 className="header">Welcome To React-Bootstrap</h1>
+        <h1 className="header">SPA</h1>
         <h2>
           Current Page is{' '}
           <Switch>
-            <Route path="/about">
-              <About />
+            <Route path="/page1">
+              <Page1 />
             </Route>
-            <Route path="/users">
-              <Users />
+            <Route path="/page2">
+              <Page2 />
             </Route>
             <Route path="/">
-              <Home />
+              <Page0 />
             </Route>
           </Switch>
         </h2>
@@ -38,13 +38,13 @@ const App = () => (
           Navigate to{' '}
           <ButtonToolbar className="custom-btn-toolbar">
             <LinkContainer to="/">
-              <Button>Home</Button>
+              <Button>Page0</Button>
             </LinkContainer>
-            <LinkContainer to="/about">
-              <Button>About</Button>
+            <LinkContainer to="/page1">
+              <Button>Page1</Button>
             </LinkContainer>
-            <LinkContainer to="/users">
-              <Button>Users</Button>
+            <LinkContainer to="/page2">
+              <Button>Page2</Button>
             </LinkContainer>
           </ButtonToolbar>
         </h2>

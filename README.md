@@ -1,3 +1,5 @@
 # Basic Example with React-Router-Bootstrap
 
-A simple [create-react-app](CRA-README.md) setup, showcasing how it works with React-Router-Bootstrap
+SPA • Single Page Application || Health / Healing through water *
+
+[*](https://www.svenskaspahotell.se/om-oss/om-spa/)
